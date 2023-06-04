@@ -1,0 +1,11 @@
+def move_zero(n):
+    l = 0
+    r = 0 
+    while r < len(n):  
+        if n[r] != 0:          
+            n[l], n[r] = n[r], n[l]        
+            l += 1        
+        r += 1
+arr = [0, 1, 0, 3, 12]
+move_zero(arr)
+print(arr)
